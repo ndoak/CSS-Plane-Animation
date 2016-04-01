@@ -1,0 +1,210 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+
+}
+
+body {
+  margin:0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* CLOUDS ANIMATION */
+
+@keyframes clouds {
+
+0% {
+	scale(2);
+	opacity:0;
+}
+
+50% {
+	scale(0.9);
+}
+100% {
+	scale(1);
+	opacity:1;
+}
+}
+.c { transition: all .2s ease-in-out; }
+.c:hover { transform: scale(1.1); }
+
+
+#sky1,#sky2, #sky3 {
+	 animation-name:clouds;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count:5;
+
+}
+
+/*RAINDROPS ANIMATION */
+/*@keyframes rain{
+	0% {
+		top:600px;
+
+	}
+
+	25% {
+top:650px;
+
+}
+40% {
+	top:675px;
+}
+50%{
+top:700px;
+}
+60%{
+	top:725px;
+}
+75%{
+top:750px;
+}
+80% {
+	top:800px;
+}
+100%{
+top:810px;
+}
+
+}*/
+
+/*.rain{
+	background-image:url("water2.png");
+	animation: rain 10s linear normal 2s;
+}
+
+#rain1 {
+	float:right;
+	margin-left:50px;
+
+}
+
+#rain2 {
+	float:right;
+	right:10px;
+}
+
+#rain3 {
+	float:right;
+	margin-left:20px;
+}*/
+
+/*HEADER + NAV STYLES*/
+.pagewrap {
+background-color:#015db4;
+
+height:800px;
+
+}
+
+header {
+	position:relative;
+
+}
+
+h1{
+	font-size:1em;
+	display:inline;
+	padding-left:450px;
+	font-style:italic;
+}
+
+h2{
+	font-family: 'Nunito', sans-serif;
+	position:relative;
+	padding-left:500px;
+	bottom:27px;
+	font-style:bold;
+	font-weight:400px;
+	font-size:1.75em;
+
+}
+
+
+nav ul {
+
+	font-size:0.5em;
+	top:0;
+	width:100%;
+    margin: 0;
+    font-size:1.5em;
+   bottom:100px;
+    position: absolute;
+    padding-bottom: 40px;
+
+
+}
+
+
+nav > ul > li {
+	float:right;
+	list-style:none;
+	padding-right:10px;
+	top:0;
+	font-size:0.5em;
+}
+
+
+
+.cloud {
+	float:right;
+}
+
+
+
+#sky1, #sky2, {
+	width:100px;
+	height:100px;
+}
+
+.animation-stage3 {
+
+	  -webkit-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -o-transition: 3s ease-in;
+    transition: 3s ease-in;
+}
+
+#sky{
+	bottom:200px;
+}
+
+  div.airplane {
+   position: relative;
+   display:inline-block;
+
+ /*   top:800px;*/
+ top:300px;
+    left:0;
+    -webkit-transition: 3s ease-in;
+    -moz-transition: 3s ease-in;
+    -o-transition: 3s ease-in;
+    transition: 3s ease-in;
+  }
+  div.airplane div {
+   /* width: 92px;*/
+    height: 215px;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+
+  /* hover final state */
+  #sky:hover div.airplane {
+
+
+
+    -webkit-transform:(840px,-200px);
+    -moz-transform: translate(840px,-200px);
+    -o-transform: translate(840px,-200px);
+    -ms-transform: translate(840px,-200px);
+    transform: translate(840px,-200px);
+
+  }
